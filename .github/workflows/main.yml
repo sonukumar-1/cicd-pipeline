@@ -1,0 +1,17 @@
+name: cicd pipeline
+
+on:
+  push: 
+     branches: main
+
+jobs:
+  build:
+     runs-on: ubuntu-latest
+
+steps:
+   -uses: actions/checkout@v4
+   -name: this is our cicd pipeline
+   run:
+    echo "hi i am sonu kumar sah "
+    uname -a
+  
